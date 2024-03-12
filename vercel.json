@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/hello.py" }
+  "version": 2,
+  "builds": [
+    { "src": "hello.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/hello.py" }
   ]
 }
